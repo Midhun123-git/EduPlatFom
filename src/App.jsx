@@ -6,6 +6,7 @@ import Programs from './Componets/Programs'
 import PopularCourses from './Componets/PopularCourses'
 import PopularCoursesPage from './Pages/PopularCoursesPage'
 import Trust from './Pages/Trust'
+import SectionPage from './Pages/SectionPage'
 const App = () => {
   return (
     
@@ -15,6 +16,8 @@ const App = () => {
       <Route path="/Programs" element={<Programs/>}/>
       <Route path="/PopularCoursesPage" element={<PopularCoursesPage/>}/>
        <Route path="/Trust" element={<Trust/>}/>
+       <Route path="/SectionPage" element={<SectionPage/>}/> 
+       
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )

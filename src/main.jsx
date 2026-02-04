@@ -8,17 +8,27 @@ import './index.css'
 import App from './App.jsx'
 import Sections from "./Componets/Sections.jsx"
 import { IoVideocamOutline } from "react-icons/io5";
+import Programs from "./Componets/Programs.jsx"
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <BrowserRouter>
         <App />
-       <Sections
-  icon={<IoVideocamOutline size={24} className="text-[#017CBA]" />}
-  title="Live Interactive Classes"
-  description="Attend live classes with real-time interaction, 
-      whiteboard sharing, and instant doubt resolution."
-  
-/>
+        {/* <Programs
+      icon={<HiOutlineBookOpen size={35} />}
+      iconBg="#3B82F6"
+      title="School Tuition"
+      description=
+      {
+        <>
+          Classes 4-12 covering CBSE, ICSE,<br/> And State syllabi
+        </>
+      }
+     
+      point1="Interactive Live Classes"
+      point2="Doubt Clearing Sessions"
+      point3="Regular Assessments"
+         />  */}
+      
 
 
    </BrowserRouter>
