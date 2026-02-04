@@ -6,9 +6,8 @@ import Sub from '../src/assets/Sub.png'
 import { HiOutlineBookOpen } from "react-icons/hi2";
 import './index.css'
 import App from './App.jsx'
-import Sections from "./Componets/Sections.jsx"
-import { IoVideocamOutline } from "react-icons/io5";
-import Programs from "./Componets/Programs.jsx"
+import Review from "./Componets/Review.jsx"
+import VikashMehta from "./assets/VikashMehta.png"
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <BrowserRouter>
@@ -29,6 +28,17 @@ createRoot(document.getElementById('root')).render(
       point3="Regular Assessments"
          />  */}
       
+ {/* <Review/> */}
+ <Review
+  description="The banking exam preparation course is well-structured with focus on reasoning and quantitative aptitude."
+  image={VikashMehta}
+  reviewerName="Vikash Mehta"
+  reviewerTitle="Banking PO - SBI"
+  category="Banking"
+  rating={5}
+/>
+
+
 
 
    </BrowserRouter>
