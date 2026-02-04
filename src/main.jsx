@@ -29,14 +29,14 @@ createRoot(document.getElementById('root')).render(
          />  */}
       
  {/* <Review/> */}
- <Review
+ {/* <Review
   description="The banking exam preparation course is well-structured with focus on reasoning and quantitative aptitude."
   image={VikashMehta}
   reviewerName="Vikash Mehta"
   reviewerTitle="Banking PO - SBI"
   category="Banking"
   rating={5}
-/>
+/> */}
 
 
 

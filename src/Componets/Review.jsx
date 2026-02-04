@@ -26,13 +26,27 @@ const Review = (props) => {
         in first attempt!" */}
         {props.description}
        </p>
-       <div className='flex gap-3 items-center border-t-1  '>
-              <img src= {props.image} alt="" className='w-[48px] h-[48px] rounded-full ml-2 mt-5' />
+       <div className='flex gap-3 items-center border-t-1  flex-wrap justify-between'>
+        {props.image ? (
+             <img src= {props.image} alt={props.reviewername} 
+             className='w-[48px] h-[48px] rounded-full ml-2 mt-5' />
+        ):(
+
+            <div className='w-[48px] h-[48px] rounded-full bg-gray-200 flex items-center justify-center ml-2 mt-5'>
+      <span className='text-[#111827] font-[600]'>
+        {props.reviewerName
+          .split(' ')
+          .map(n => n[0])
+          .join('')}
+      </span>
+    </div>
+        )}
+              
               <div className='flex flex-col'>
-                                           <p className='font-[600] mt-5  text-[16px] text-[#111827]'>Vikash Mehta</p> 
-                                           <p className='font-[400]  text-[14px] text-[#6B7280]'>Banking PO - SBI</p>
+                                           <p className='font-[600] mt-5  text-[16px] text-[#111827]'>{props.reviewerName}</p> 
+                                           <p className='font-[400]  text-[14px] text-[#6B7280]'>{props.reviewerTitle}</p>
               </div>
-              <div className='bg-[#DBEAFE] mt-5 rounded-full p-2 text-[#2563EB]  ml-13'>
+              <div className='bg-[#DBEAFE] mt-5 rounded-full p-2 text-[#2563EB]  '>
                 {props.category}
               </div>
        </div>
