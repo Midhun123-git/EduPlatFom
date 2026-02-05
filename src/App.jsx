@@ -11,6 +11,7 @@ import Review from "./Componets/Review"
 import ReviewPage from './Pages/ReviewPage'
 import Promotion from './Pages/Promotion'
 import Footer from './Pages/Footer'
+import LearningProg from './Pages/LearningProg'
 const App = () => {
   return (
     
@@ -25,6 +26,7 @@ const App = () => {
        <Route path="/ReviewPage" element={<ReviewPage/>}/> 
        <Route path="/Promotion" element={<Promotion/>}/> 
        <Route path="/Footer" element={<Footer/>}/> 
+       <Route path="/LearningProg" element={<LearningProg/>}/>
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )
