@@ -74,11 +74,11 @@ const Hero = () => {
          </div> 
           {/* Left Section Ends*/}
           {/* Right Section */}
-          <div className='w-full lg:w-[50%] h-[584px] ml-auto mt-8 '>
+          <div className='w-full hidden lg:block lg:w-[50%] h-[584px] ml-auto mt-8 '>
                <img src={DemoImg} alt="" className='max-w-full h-auto'/>
 
                <div className='absolute top-0
-               lg:left-150   sm:left-120  h-[52px] w-[135px]  
+               lg:left-150  hidden md:flex sm:left-120  h-[52px] w-[135px]  
                bg-white rounded-[12px] flex items-center gap-4'> 
                          <div className='rounded-full  h-[12px]
                           w-[12px] bg-[#22C55E] ml-3'>
@@ -88,7 +88,7 @@ const Hero = () => {
                             Live Classes
                          </p>
                </div>
-
+            
               
           </div>
             {/* Right Section Ends*/}
@@ -99,7 +99,9 @@ const Hero = () => {
                  max-md:right-6 max-md:bottom-12
                  max-sm:right-4 max-sm:bottom-8
                  flex flex-col items-center  
-                 justify-center'> 
+                 justify-center
+                 hidden md:flex
+                 '> 
                     
                     <div>
                     <p className='text-[#2563EB]  font-[700] text-[24] '>98%</p>

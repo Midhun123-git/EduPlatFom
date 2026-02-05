@@ -12,6 +12,7 @@ import ReviewPage from './Pages/ReviewPage'
 import Promotion from './Pages/Promotion'
 import Footer from './Pages/Footer'
 import LearningProg from './Pages/LearningProg'
+import FullPage from './Pages/FullPage'
 const App = () => {
   return (
     
@@ -27,6 +28,7 @@ const App = () => {
        <Route path="/Promotion" element={<Promotion/>}/> 
        <Route path="/Footer" element={<Footer/>}/> 
        <Route path="/LearningProg" element={<LearningProg/>}/>
+       <Route path="/" element={<FullPage/>}/>
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )
