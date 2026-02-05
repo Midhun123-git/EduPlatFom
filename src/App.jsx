@@ -10,6 +10,7 @@ import SectionPage from './Pages/SectionPage'
 import Review from "./Componets/Review"
 import ReviewPage from './Pages/ReviewPage'
 import Promotion from './Pages/Promotion'
+import Footer from './Pages/Footer'
 const App = () => {
   return (
     
@@ -23,6 +24,7 @@ const App = () => {
        <Route path="/Review" element={<Review/>}/> 
        <Route path="/ReviewPage" element={<ReviewPage/>}/> 
        <Route path="/Promotion" element={<Promotion/>}/> 
+       <Route path="/Footer" element={<Footer/>}/> 
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )
