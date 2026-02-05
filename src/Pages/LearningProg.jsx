@@ -2,7 +2,7 @@ import React from 'react'
 import Programs from '../Componets/Programs'
 import { HiOutlineBookOpen } from "react-icons/hi2";
 import { RiGraduationCapLine } from "react-icons/ri";
-import { PiSpiralThin } from "react-icons/pi";
+import { RxTarget } from "react-icons/rx";
 import { PiMedalThin } from "react-icons/pi";
 import { LuCrown } from "react-icons/lu";
 import { FiUsers } from "react-icons/fi";
@@ -47,7 +47,7 @@ academic and career goals</p>
          />  
 
          <Programs
-                icon={<PiSpiralThin size={35} />}
+                icon={<RxTarget size={35} />}
                 iconBg="#22C55E"
                 title="Entrance Coaching"
                 description=

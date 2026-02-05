@@ -3,7 +3,7 @@ import { MdOutlineStarPurple500 } from "react-icons/md";
 import VikashMehta from "../assets/VikashMehta.png"
 const Review = (props) => {
   return (
-    <div className='lg:w-[320px] lg:h-[248px] shadow-md m-5 flex flex-col'>
+    <div className='lg:w-[320px] lg:h-[248px] shadow-md m-5 flex flex-col  justify-between'>
        <div className='flex justify-between p-2'>
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M21.3334 4C20.6261 4 19.9478 4.28095 19.4477 4.78105C18.9476 5.28115 18.6667 5.95942 18.6667 6.66667V14.6667C18.6667 15.3739 18.9476 16.0522 19.4477 16.5523C19.9478 17.0524 20.6261 17.3333 21.3334 17.3333C21.687 17.3333 22.0261 17.4738 22.2762 17.7239C22.5262 17.9739 22.6667 18.313 22.6667 18.6667V20C22.6667 20.7072 22.3857 21.3855 21.8856 21.8856C21.3855 22.3857 20.7073 22.6667 20 22.6667C19.6464 22.6667 19.3073 22.8071 19.0572 23.0572C18.8072 23.3072 18.6667 23.6464 18.6667 24V26.6667C18.6667 27.0203 18.8072 27.3594 19.0572 27.6095C19.3073 27.8595 19.6464 28 20 28C22.1218 28 24.1566 27.1571 25.6569 25.6569C27.1572 24.1566 28 22.1217 28 20V6.66667C28 5.95942 27.7191 5.28115 27.219 4.78105C26.7189 4.28095 26.0406 4 25.3334 4H21.3334Z" stroke="#020817" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
@@ -18,21 +18,19 @@ const Review = (props) => {
         </div>
        
        </div>
-
-       <p className='font-[400] text-[16px]  text-[#4B5563] m-4'>
-        {/* "The banking exam preparation course is
-        well-structured with focus on reasoning
-        and quantitative aptitude. Cleared SBI PO
-        in first attempt!" */}
+        <div className='flex-1'>
+          <p className='font-[400] text-[16px]  text-[#4B5563] m-4'>
         {props.description}
        </p>
-       <div className='flex gap-3 items-center border-t-1  flex-wrap justify-between'>
+        </div>
+       
+       <div className='flex gap-3 items-center border-t-1  '>
         {props.image ? (
              <img src= {props.image} alt={props.reviewername} 
-             className='w-[48px] h-[48px] rounded-full ml-2 mt-5' />
+             className='w-[48px] h-[48px] rounded-full ml-2 mt-4' />
         ):(
 
-            <div className='w-[48px] h-[48px] rounded-full bg-gray-200 flex items-center justify-center ml-2 mt-5'>
+            <div className='w-[48px] h-[48px] rounded-full bg-gray-200 flex items-center justify-center ml-2 mt-4'>
       <span className='text-[#111827] font-[600]'>
         {props.reviewerName
           .split(' ')
@@ -43,10 +41,11 @@ const Review = (props) => {
         )}
               
               <div className='flex flex-col'>
-                                           <p className='font-[600] mt-5  text-[16px] text-[#111827]'>{props.reviewerName}</p> 
+                                           <p className='font-[600] mt-4  text-[16px] text-[#111827]'>{props.reviewerName}</p> 
                                            <p className='font-[400]  text-[14px] text-[#6B7280]'>{props.reviewerTitle}</p>
               </div>
-              <div className='bg-[#DBEAFE] mt-5 rounded-full p-2 text-[#2563EB]  '>
+              <div className='bg-[#DBEAFE] px-3 py-1 mt-4 whitespace-nowrap text-sm
+               rounded-full p-2 text-[#2563EB]  '>
                 {props.category}
               </div>
        </div>

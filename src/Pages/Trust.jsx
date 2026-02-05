@@ -1,7 +1,7 @@
 import React from 'react'
 import { LuUsers } from "react-icons/lu";
 import { LuBookOpen } from "react-icons/lu";
-import { PiMedalThin } from "react-icons/pi";
+import { LuAward } from "react-icons/lu";
 import { FaRegClock } from "react-icons/fa";
 const Trust = () => {
   return (
@@ -34,7 +34,7 @@ const Trust = () => {
 
                          <div className='flex flex-col items-center mt-6'>
                               <div className='w-[64px] h-[64px] rounded-[16px] bg-white/10 flex items-center justify-center'>
-                                        <PiMedalThin size={32} className='text-white'/>
+                                        <LuAward size={32} className='text-white'/>
                               </div>
                               
                               <p className='text-white font-[700] text-[36px]'>98%</p>

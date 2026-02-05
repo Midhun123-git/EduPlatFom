@@ -39,21 +39,24 @@ const Promotion = () => {
                                 </div>
                         </div> */}
 
-                        <div className='flex flex-col gap-4 mt-5 items-center lg:items-start'>
-                            {
-                              [
-                                "Offline video downloads",
-                                "Push notifications for classes",
-                                "Progress tracking & analytics"
-                              ].map((text,i)=>(
-                                    <div key={i} className='flex gap-3 items-center'>
-                                    <div className='rounded-full h-[10px] w-[10px] bg-white'/>
-                                    <p className='text-[#E9EDF2]'>{text}</p>
-                                </div>
-                              ))
-                              
-                            }
-                        </div>
+                      <div className="flex flex-col gap-4 mt-5 items-center">
+  {[
+    "Offline video downloads",
+    "Push notifications for classes",
+    "Progress tracking & analytics with detailed reports and insights that extend to next line"
+  ].map((text, i) => (
+    <div
+      key={i}
+      className="flex gap-3 items-start text-left w-full max-w-md"
+    >
+      <div className="rounded-full h-[10px] w-[10px] bg-white mt-2 flex-shrink-0" />
+      <p className="text-[#E9EDF2]">
+        {text}
+      </p>
+    </div>
+  ))}
+</div>
+
 
                         <div className='flex gap-5 mt-5 flex-wrap  lg:justify-start justify-center'>
                                         <div className='flex gap-4 w-[181px]  cursor-pointer rounded-[10px] p-2 bg-[#000000] text-white items-center'>
@@ -107,6 +110,7 @@ const Promotion = () => {
             <div className='w-[48px] h-[48px]
              bg-[#FACC15] rounded-full 
              ml-5 flex items-center 
+             hidden lg:flex
              cursor-pointer justify-center
              absolute
              top-[20%]
@@ -120,6 +124,7 @@ const Promotion = () => {
          <div className='w-[48px] h-[48px] 
          bg-[#4ADE80] cursor-pointer 
          rounded-full ml-5 flex 
+         hidden lg:flex
          items-center justify-center 
          absolute
          lg:bottom-[20%]

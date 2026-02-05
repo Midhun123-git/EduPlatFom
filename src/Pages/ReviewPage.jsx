@@ -91,9 +91,9 @@ const ReviewPage = () => {
               <p className='font-[400] text-[16px] text-[#4B5563] text-center  mt-9'>Join thousands of successful students</p>
 
               <div className='flex flex-col sm:flex-row items-center justify-center  gap-5  mt-6'>
-                <button className='hover:bg-[#017CBA]  lg:w-auto w-full
-                 bg-white border border-[#017CBA]   text-[#017CBA] 
-                 hover:text-white rounded-[12px] p-2 cursor-pointer
+                <button className='bg-[#017CBA]  lg:w-auto w-full
+                  border     
+                 text-white rounded-[12px] p-2 cursor-pointer
                  transition duration-100 ease-in
                  '>
                     Explore Courses 

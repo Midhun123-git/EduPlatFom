@@ -15,24 +15,26 @@ const Footer = () => {
          <div className='
     flex  flex-col lg:flex-row  items-start  justify-center
       gap-10 md:gap-20  '>
-             <div className='flex flex-col gap-3 text-center lg:text-left'>
-                <div className='flex flex-row gap-3 items-center  justify-center lg:justify-start'>
+            <div className='flex lg:flex-row flex-col gap-9 justify-start'>
+             <div className='flex gap-8'>
+                        <div className='flex flex-col gap-3 text-center sm:justify-start lg:text-left'>
+                <div className='flex flex-row gap-3 items-center  lg:justify-center justify-start'>
                                         <LuGraduationCap size={32} className='text-[#2563EB]'/>
                                         <p className='font-[700]  text-[#FFFFFF]'>EduPlatform</p>
                 </div>
-                <p className='text-[#D1D5DB] font-[400] text-[14px]'>
-                    Empowering students with quality  <br />
-                    education through comprehensive online <br />
+                <p className='text-[#D1D5DB] font-[400] sm:text-[10px] lg:text-[14px] flex flex-wrap'>
+                    Empowering students with quality  <br className='hidden lg:block'/>
+                    education through comprehensive online <br className='hidden lg:block' />
                     tuition and coaching programs.
                 </p>
-                <div className='flex gap-6 justify-center lg:jystify-start'>
+                <div className='flex gap-6 justify-center lg:justify-center'>
                                         <FaFacebookF size={20} className='text-[#9CA3AF] cursor-pointer'/>
                                         <CiTwitter size={20} className='text-[#9CA3AF] cursor-pointer'/>
                                         <RiInstagramLine size={20} className='text-[#9CA3AF] cursor-pointer'/>
                                         <CiYoutube  size={20} className='text-[#9CA3AF] cursor-pointer'/>
                 </div>
              </div>
-
+                         
              <div className='flex flex-col  gap-2'>
                   <p className='font-[600] text-[18px] text-[#FFFFFF]'>Quick Links</p>
                   <p className='font-[400] text-[14px] text-[#D1D5DB]'>College Tuition</p>
@@ -41,8 +43,10 @@ const Footer = () => {
                   <p className='font-[400] text-[14px] text-[#D1D5DB]'>UPSC Coaching</p>
                   
              </div>
-
-             <div className='flex flex-col  gap-2'>
+           </div>
+            
+        <div className='flex gap-9'>
+                                                      <div className='flex flex-col  gap-2'>
                   <p className='font-[600] text-[18px] text-[#FFFFFF]'>Support</p>
                   <p className='font-[400] text-[14px] text-[#D1D5DB]'>Help Center</p>
                   <p className='font-[400] text-[14px] text-[#D1D5DB]'>FAQ</p>
@@ -50,6 +54,7 @@ const Footer = () => {
                   <p className='font-[400] text-[14px] text-[#D1D5DB]'>Privacy And Policy</p>
                     <p className='font-[400] text-[14px] text-[#D1D5DB]'>Terms Of Service</p>
              </div>
+
              <div className='flex flex-col  gap-2'>
                   <p className='font-[600] text-[18px] text-[#FFFFFF]'>Contact Info</p>
                   <div className='flex gap-4'>
@@ -67,6 +72,10 @@ const Footer = () => {
                  
              </div>
              
+        </div>
+            </div>
+           
+           
              
              
     </div>

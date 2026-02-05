@@ -45,12 +45,12 @@ const PopularCourses = (props) => {
                     {props.Proffeser}
                   </p>
                    <div className='flex '>
-                            <div className='flex gap-2 items-center m-2'>
+                            <div className='flex gap-2 items-center ml-2'>
                                 <CiClock1 size={16}/>
                                 <p className='text-[#6B7280] font-[400]'>{props.duration}</p>
                             </div>
 
-                            <div className='flex gap-2 items-center m-2'>
+                            <div className='flex gap-2 items-center ml-2'>
                                 <LuBookOpen  size={16} className='text-[#6B7280]'/>
                                 <p className='text-[#6B7280] font-[400]'>{props.lessons}</p>
                             </div>
