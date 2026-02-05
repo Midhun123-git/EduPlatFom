@@ -3,7 +3,7 @@ import PopularCourses from '../Componets/PopularCourses'
 import Sub from "../assets/Sub.png"
 import Intermediate from "../assets/intermediate.png"
 import Upsc from "../assets/Upsc.png"
-import Ssc from "../assets/SSC.png"
+import Ssc from "../assets/Ssc.png"
 import { FaArrowRight } from "react-icons/fa";
 const PopularCoursesPage = () => {
   return (
