@@ -17,6 +17,7 @@ import LoginHeader from './Componets/LoginHeader'
 import Test from "./Componets/Test"
 import Mock from "./Componets/Mock"
 import TestPractice from './Pages/TestPractice'
+import Practice from "./Componets/Practice"
 const App = () => {
   return (
     
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/Test" element={<Test/>}/>
          <Route path="/Mock" element={<Mock/>}/>
          <Route path='/TestPractice' element={<TestPractice/>}/>
+          <Route path='/Practice' element={<Practice/>}/>
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )
