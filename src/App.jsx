@@ -16,6 +16,7 @@ import FullPage from './Pages/FullPage'
 import LoginHeader from './Componets/LoginHeader'
 import Test from "./Componets/Test"
 import Mock from "./Componets/Mock"
+import TestPractice from './Pages/TestPractice'
 const App = () => {
   return (
     
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/LoginHeader" element={<LoginHeader/>}/>
         <Route path="/Test" element={<Test/>}/>
          <Route path="/Mock" element={<Mock/>}/>
+         <Route path='/TestPractice' element={<TestPractice/>}/>
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )

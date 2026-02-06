@@ -13,14 +13,7 @@ createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <BrowserRouter>
         <App />
-        <Mock
-        sub="gfchgkl"
-        level="High"
-        question="180 Questiond"
-        duration="3 Hour"
-        attempts="1221"
-        rate="4.0"
-        />
+        
    </BrowserRouter>
    </React.StrictMode>,
     
