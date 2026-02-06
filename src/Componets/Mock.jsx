@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaStar } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const Mock = (props) => {
   return (
     <div className='w-full lg:w-[389px] 
@@ -42,7 +43,8 @@ const Mock = (props) => {
             </div>
       </div>
 
-      <button className='w-full  bg-[#017CBA] 
+            <Link to={props.path}>
+                    <button className='w-full  bg-[#017CBA] 
       items-center justify-center 
       cursor-pointer text-white
       rounded-[10px]
@@ -50,6 +52,8 @@ const Mock = (props) => {
       '>
                     Start Test
       </button>
+            </Link>
+      
     </div>
   )
 }

@@ -66,6 +66,7 @@ const TestPractice = () => {
                     duration="2 Hour"
                     attempts="890"
                     rate="4.7"
+                    path="/StartTest"
             /> 
     </div>
     <div className='mt-9'>
