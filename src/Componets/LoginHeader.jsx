@@ -3,10 +3,11 @@ import { LuGraduationCap } from "react-icons/lu";
 import { Link } from "react-router-dom"
 import { HiBars3 } from "react-icons/hi2";
 import { IoIosClose } from "react-icons/io";
-const Header = () => {
+import Profile from '../assets/Profile.jpg'
+const LoginHeader = () => {
     const [isopen,setisopen]=useState(false);
   return (
-    <div className='w-full h-[63px]  flex items-center mt-3 gap-4  p-4 md:p-6 justify-between'>
+    <div className='w-full shadow-md  h-[63px] flex items-center mt-3 gap-9  p-4 md:p-6 justify-between'>
         <div className='flex flex-row '>
             <div className='flex flex-row gap-3 items-center  lg:ml-[120px] lg:mr-[160px]'>
                         <LuGraduationCap size={32} className='text-[#2563EB]'/>
@@ -40,25 +41,12 @@ const Header = () => {
                     </ul>
                 </li>
                 <li className='hover:text-[#2563EB]'><Link to="/">My Learning</Link></li>
-                <li className='hover:text-[#2563EB]'><Link to="/LoginHeader">Test Practice</Link></li>
+                <li className='hover:text-[#2563EB]'><Link to="/">Test Practice</Link></li>
                 <li className='hover:text-[#2563EB]'><Link to="/">About Us</Link></li>
-               
+                
             </ul>
-            <div className='hidden md:flex gap-9 lg:ml-[120px]'>
-                    <button className='border border-[#E2E8F0] 
-                    rounded-[10px] p-3  hover:bg-[#016BA5] hover:text-white 
-                    text-[rgba(2, 8, 23, 1)] cursor-pointer transition-all duration-400'>
-                        Login
-                    </button>
-
-                    <button className='border border-[#E2E8F0] hover:text-white 
-                    hover:bg-[#016BA5] text-black rounded-[10px] p-3 
-                    text-[rgba(2, 8, 23, 1)] cursor-pointer transition-all duration-400'>
-                     Sign Up
-                    </button>
-            </div>
-
-            <div className=' md:hidden flex justify-end ml-[190px]'>
+                 
+            <div className='md:hidden flex justify-end ml-[190px]'>
                         <button onClick={()=>setisopen(true)}>
                                  <HiBars3  size={24}/>
                         </button>
@@ -80,9 +68,12 @@ const Header = () => {
                               <IoIosClose size={24}/>
                            </button>
                     </div>
+                    <div className='w-[42px] h-[42px] ml-3 mb-4 lg:mr-[90px]'>
+                            <img src={Profile} alt="" className='rounded-full'/>
+                    </div>
                      <ul className='flex flex-col gap-4 pl-2 text-lg font-medium '>
                             <li className='ml-2'>
-                                Home
+                                 <Link to="/">Home</Link> 
                             </li>
 
                             <li className='ml-2'>
@@ -96,35 +87,19 @@ const Header = () => {
                                 </ul>
                             </li>
 
-                            <li className='ml-2'>My Learning</li>
-                            <li className='ml-2'>Test Practice</li>
+                            <li className='ml-2'><Link>My Learning</Link></li>
+                            <li className='ml-2'>  <Link to="/"> Test Practice </Link></li>
                             <li className='ml-2'>About Us</li>
-
-                            <li>
-                                <button className='w-full px-4 py-2
-                                rounded-md focus:bg-[#016BA5]
-                                focus:text-white border border-gray-200
-                                transition-all duration-200
-                                '>
-                                    Login
-                                </button>
-                            </li>
-
-                            <li>
-                                <button 
-                               className='w-full border border-[#E2E8F0] focus:text-white 
-                    focus:bg-[#016BA5] text-black rounded-[10px] p-3 
-                    cursor-pointer transition-all duration-300'
-                                >
-                                    Sign Up
-                                </button>
-                            </li>
                      </ul>
+                       
+                     
              </div>
         </div>
-        
+         <div className='w-[42px] h-[42px] lg:mr-[90px]'>
+                            <img src={Profile} alt="" className='rounded-full'/>
+         </div>
     </div>
   )
 }
 
-export default Header
+export default LoginHeader

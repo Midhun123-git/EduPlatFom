@@ -13,6 +13,9 @@ import Promotion from './Pages/Promotion'
 import Footer from './Pages/Footer'
 import LearningProg from './Pages/LearningProg'
 import FullPage from './Pages/FullPage'
+import LoginHeader from './Componets/LoginHeader'
+import Test from "./Componets/Test"
+import Mock from "./Componets/Mock"
 const App = () => {
   return (
     
@@ -29,6 +32,9 @@ const App = () => {
        <Route path="/Footer" element={<Footer/>}/> 
        <Route path="/LearningProg" element={<LearningProg/>}/>
        <Route path="/" element={<FullPage/>}/>
+        <Route path="/LoginHeader" element={<LoginHeader/>}/>
+        <Route path="/Test" element={<Test/>}/>
+         <Route path="/Mock" element={<Mock/>}/>
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )
