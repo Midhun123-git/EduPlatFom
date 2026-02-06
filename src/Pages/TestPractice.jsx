@@ -10,8 +10,11 @@ import Footer from "./Footer"
 const TestPractice = () => {
   return (
     <div>
-   <LoginHeader/>
-   <div className='flex flex-col items-start pt-5 lg:pl-40 pl-4'>
+        <div className='fixed top-0 left-0 right-0 z-50 bg-white '>
+                <LoginHeader/>
+        </div>
+   
+   <div className='flex flex-col items-start pt-5 mt-15 lg:pl-40 pl-4'>
              <h1 className='text-[#111827] text-[30px] font-[700]   '>
         Test Practice
      </h1>
