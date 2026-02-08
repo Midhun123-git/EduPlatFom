@@ -50,7 +50,7 @@ const StartTest = () => {
    p2="3 hour duration"
    p3="All subjects included"
     p4="Quick 10-15 questions daily"
-    btn="Start Daily Practice"
+    btn="Start Daily Practice" 
    />
 
      <Practice
@@ -60,7 +60,7 @@ const StartTest = () => {
    p1="Full syllabus coverage"
    p2="3 hour duration"
    p3="All subjects included"
-    btn="Start Mock Test"
+    btn="Start Mock Test"  path="/StartMockTestPage"
    />
    
   </div>

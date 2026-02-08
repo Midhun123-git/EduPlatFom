@@ -1,6 +1,8 @@
 import React from 'react'
-
+import { useNavigate } from "react-router-dom";
+import PhyPage from '../Pages/PhyPage';
 const Paper = (props) => {
+     const navigate = useNavigate();
   return (
     <div className='w-full lg:w-[596px] min-h-[289px] flex flex-col  border-1 border-[#E2E8F0] p-5'>
                                     <div className='flex flex-col gap-3 pb-4'>
@@ -18,21 +20,29 @@ const Paper = (props) => {
 <div className='flex lg:flex-row flex-col gap-4 justify-center items-center'>
             <div className='flex w-full flex-col gap-3'>
                     <div className='w-full lg:w-[242px] h-[40px] 
+                    
                     flex justify-center 
+                    cursor-pointer
                     items-center
-                    rounded-[10px] border-1 border-[#E2E8F0]'>
+                    rounded-[10px] border-1 border-[#E2E8F0]'
+                   
+                    >
                         {props.sub1}
                     </div>
 
                      <div className='w-full lg:w-[242px] h-[40px] 
                     flex justify-center 
                     items-center
-                    rounded-[10px] border-1 border-[#E2E8F0]'>
+                    cursor-pointer
+                    rounded-[10px] border-1 border-[#E2E8F0]'
+                     onClick={() => navigate("/PhyPage")}
+                    >
                         {props.sub2}
                     </div>
                      <div className='w-full lg:w-[242px] h-[40px] 
                     flex justify-center 
                     items-center
+                    cursor-pointer
                     rounded-[10px] border-1 border-[#E2E8F0]'>
                        {props.sub3}
                     </div>
@@ -42,6 +52,7 @@ const Paper = (props) => {
                     <div className='w-full lg:w-[242px] h-[40px] 
                     flex justify-center 
                     items-center
+                    cursor-pointer
                     rounded-[10px] border-1 border-[#E2E8F0]'>
                        {props.sub4}
                     </div>
@@ -49,6 +60,7 @@ const Paper = (props) => {
                      <div className='w-full lg:w-[242px] h-[40px] 
                     flex justify-center 
                     items-center
+                    cursor-pointer
                     rounded-[10px] border-1 border-[#E2E8F0]'>
                                             {props.sub5}
 
@@ -56,6 +68,7 @@ const Paper = (props) => {
                      <div className='w-full lg:w-[242px] h-[40px] 
                     flex justify-center 
                     items-center
+                    cursor-pointer
                     rounded-[10px] border-1 border-[#E2E8F0]'>
                                                {props.sub6}
 

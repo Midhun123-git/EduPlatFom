@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 const Prctice = (props) => {
+    const navigate = useNavigate();
+
   return (
     <div className='border-1 border-[#E2E8F0] 
      lg:w-[596px] min-h-[289px] 
@@ -45,12 +48,14 @@ const Prctice = (props) => {
               
 
               </div>
-      <button className='w-full h-[40px] mt-5 bg-[#017CBA] 
-            items-center justify-center 
-            cursor-pointer text-white
-            rounded-[10px]
-      '>
-                    {props.btn}
+      <button
+        onClick={() => navigate(props.path)}
+        className='w-full h-[40px] mt-5 bg-[#017CBA] 
+        items-center justify-center 
+        cursor-pointer text-white
+        rounded-[10px]'
+      >
+        {props.btn}
       </button>
     </div>
   )

@@ -21,11 +21,13 @@ import Practice from "./Componets/Practice"
 import Paper from "./Componets/Paper"
 import StartTest from './Pages/StartTest'
 import StartMockTest from './Pages/StartMockTest'
-import Phycomp  from './Pages/Phycomp'
-import PhyComp2 from './Pages/PhyComp2'
-import PhyComp3 from './Pages/PhyComp3'
-import PhyComp4 from './Pages/PhyComp4'
-import PhyComp5 from './Pages/PhyComp5'
+import Phycomp  from './Componets/Phycomp'
+import PhyComp2 from './Componets/PhyComp2'
+import PhyComp3 from './Componets/PhyComp3'
+import PhyComp4 from './Componets/PhyComp4'
+import PhyComp5 from './Componets/PhyComp5'
+import PhyPage from './Pages/PhyPage'
+import StartMockTestPage from './Pages/StartMockTestPage'
 const App = () => {
   return (
     
@@ -55,6 +57,8 @@ const App = () => {
                 <Route path='/PhyComp3' element={<PhyComp3/>}/>
                   <Route path='/PhyComp4' element={<PhyComp4/>}/>
                    <Route path='/PhyComp5' element={<PhyComp5/>}/>
+                    <Route path='/PhyPage' element={<PhyPage/>}/>
+                      <Route path='/StartMockTestPage' element={<StartMockTestPage/>}/>
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )
