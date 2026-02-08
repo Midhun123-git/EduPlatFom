@@ -20,6 +20,7 @@ import TestPractice from './Pages/TestPractice'
 import Practice from "./Componets/Practice"
 import Paper from "./Componets/Paper"
 import StartTest from './Pages/StartTest'
+import StartMockTest from './Pages/StartMockTest'
 const App = () => {
   return (
     
@@ -43,6 +44,7 @@ const App = () => {
           <Route path='/Practice' element={<Practice/>}/>
           <Route path='/Paper' element={<Paper/>}/>
            <Route path='/StartTest' element={<StartTest/>}/>
+            <Route path='/StartMockTest' element={<StartMockTest/>}/>
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )

@@ -50,6 +50,7 @@ const StartTest = () => {
    p2="3 hour duration"
    p3="All subjects included"
     p4="Quick 10-15 questions daily"
+    btn="Start Daily Practice"
    />
 
      <Practice
@@ -59,7 +60,7 @@ const StartTest = () => {
    p1="Full syllabus coverage"
    p2="3 hour duration"
    p3="All subjects included"
-    
+    btn="Start Mock Test"
    />
    
   </div>
@@ -75,6 +76,7 @@ const StartTest = () => {
             sub4="Botany Previous Papers"
             sub5="Zoolagy Previous Papers"
             sub6="English Previous Papers"
+            
         />
         <div>
 <Paper

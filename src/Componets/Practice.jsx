@@ -50,7 +50,7 @@ const Prctice = (props) => {
             cursor-pointer text-white
             rounded-[10px]
       '>
-                    Start Practice
+                    {props.btn}
       </button>
     </div>
   )
