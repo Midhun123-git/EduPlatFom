@@ -21,6 +21,11 @@ import Practice from "./Componets/Practice"
 import Paper from "./Componets/Paper"
 import StartTest from './Pages/StartTest'
 import StartMockTest from './Pages/StartMockTest'
+import Phycomp  from './Pages/Phycomp'
+import PhyComp2 from './Pages/PhyComp2'
+import PhyComp3 from './Pages/PhyComp3'
+import PhyComp4 from './Pages/PhyComp4'
+import PhyComp5 from './Pages/PhyComp5'
 const App = () => {
   return (
     
@@ -45,6 +50,11 @@ const App = () => {
           <Route path='/Paper' element={<Paper/>}/>
            <Route path='/StartTest' element={<StartTest/>}/>
             <Route path='/StartMockTest' element={<StartMockTest/>}/>
+             <Route path='/Phycomp' element={<Phycomp/>}/>
+             <Route path='/PhyComp2' element={<PhyComp2/>}/>
+                <Route path='/PhyComp3' element={<PhyComp3/>}/>
+                  <Route path='/PhyComp4' element={<PhyComp4/>}/>
+                   <Route path='/PhyComp5' element={<PhyComp5/>}/>
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )
