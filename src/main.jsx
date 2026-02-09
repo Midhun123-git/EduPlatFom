@@ -13,19 +13,8 @@ import ReviewSolution from "./Componets/ReviewSolution.jsx"
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <BrowserRouter>
-        {/* <App /> */}
-     <ReviewSolution
-  question="Question 1"
-  questionText="Which organelle is known as the powerhouse of the cell?"
-  sub="Physics"
-  mark="4 Marks"
-  op1="Nucleus"
-  op2="Mitochondria"
-  op3="Ribosome"
-  op4="Golgi Apparatus"
-  correctanswer="B"
-  useranswer="B"
-/>
+        <App />
+    
 
 
 

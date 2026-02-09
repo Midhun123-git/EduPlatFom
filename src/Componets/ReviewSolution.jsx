@@ -13,7 +13,7 @@ const ReviewSolution = (props) => {
     ]
 const {correctanswer,useranswer}=props;
   return (
-    <div className='w-full lg:w-[1216px] bg-[#EFF6FF] h-[425px]'>
+    <div className='w-full lg:w-[1216px] bg-[#EFF6FF] h-[425px] rounded-2xl'>
      <div className='flex flex-col gap-2 p-3'>
             <div className='flex justify-between flex-wrap'>
                     <div className='flex gap-3 items-center'>
