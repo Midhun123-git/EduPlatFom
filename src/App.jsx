@@ -28,6 +28,7 @@ import PhyComp4 from './Componets/PhyComp4'
 import PhyComp5 from './Componets/PhyComp5'
 import PhyPage from './Pages/PhyPage'
 import StartMockTestPage from './Pages/StartMockTestPage'
+import ReviewSolution from './Componets/ReviewSolution'
 const App = () => {
   return (
     
@@ -59,6 +60,7 @@ const App = () => {
                    <Route path='/PhyComp5' element={<PhyComp5/>}/>
                     <Route path='/PhyPage' element={<PhyPage/>}/>
                       <Route path='/StartMockTestPage' element={<StartMockTestPage/>}/>
+            <Route path='/ReviewSolution' element={<ReviewSolution/>}/>
        {/* <Route path="/PopularCourses" element={<PopularCourses/>}/> */}
     </Routes>
   )

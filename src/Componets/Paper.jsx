@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import PhyPage from '../Pages/PhyPage';
 const Paper = (props) => {
      const navigate = useNavigate();
+     const handlenavigate=(path)=>{
+     navigate(path)
+     }
   return (
     <div className='w-full lg:w-[596px] min-h-[289px] flex flex-col  border-1 border-[#E2E8F0] p-5'>
                                     <div className='flex flex-col gap-3 pb-4'>
@@ -25,7 +28,7 @@ const Paper = (props) => {
                     cursor-pointer
                     items-center
                     rounded-[10px] border-1 border-[#E2E8F0]'
-                   
+                    
                     >
                         {props.sub1}
                     </div>
@@ -35,7 +38,7 @@ const Paper = (props) => {
                     items-center
                     cursor-pointer
                     rounded-[10px] border-1 border-[#E2E8F0]'
-                     onClick={() => navigate("/PhyPage")}
+                     onClick={() => handlenavigate(props.path2)}
                     >
                         {props.sub2}
                     </div>

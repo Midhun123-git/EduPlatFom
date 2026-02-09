@@ -63,8 +63,8 @@ const StartMockTest = () => {
   </div>
 </div>
 
-        <div className='flex gap-5 p-5 flex-col lg:flex-row mt-7 flex-wrap'>
-            <div className='flex lg:flex-row  flex-col; gap-16'>
+        <div className='flex gap-5 flex-col lg:flex-row mt-7 flex-wrap'>
+            <div className='flex lg:flex-row  flex-col gap-16'>
                         <div className='flex flex-col'>
                              <div className='flex flex-col p-6 gap-2 
                         lg:h-[536px] bg-[#FFFFFF] w-full lg:w-[906px] rounded-[12px] border-1 border-[#E2E8F0]
@@ -103,11 +103,11 @@ const StartMockTest = () => {
                                   
                              
                              </div>
-                             <div className='flex justify-between 
+                             <div className='flex justify-between  flex-wrap
                              gap-5
                                items-center  mt-5
                               '>
-                               <div className='flex cursor-pointer gap-2 p-4  border-1 border-[#E2E8F0] justify-center  rounded-[10px]'>
+                               <div className='flex cursor-pointer gap-2  p-4  border-1 border-[#E2E8F0] justify-center  rounded-[10px]'>
                                     <MdOutlineKeyboardArrowLeft size={24} />
                                     <p className='text-[#020817] font-[500] text-[14px]'> Previous</p>
                                </div>
@@ -129,7 +129,7 @@ const StartMockTest = () => {
                              
                         </div>
                        
-                           <div className='w-[280px] h-[330px] border-1 border-[#E2E8F0] flex flex-col rounded-[12px]'>
+                           <div className='w-full lg:w-[280px] h-[330px] border-1 m-2 border-[#E2E8F0] justify-center flex flex-col rounded-[12px]'>
                                 <p className="font-[600] text-[#020817] p-4 text-[16px]">Question Navigation</p>
                                  <div className='flex pl-4   gap-3'>
                                                             {steps.map((item)=>(

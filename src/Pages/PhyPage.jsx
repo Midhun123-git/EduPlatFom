@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { useState } from 'react';
 import LoginHeader from '../Componets/LoginHeader'
 import { FaRegChartBar } from "react-icons/fa6";
 import Footer from "./Footer"
@@ -10,6 +10,7 @@ import PhyComp3 from '../Componets/PhyComp3';
 import PhyComp4 from '../Componets/PhyComp4';
 import PhyComp5 from '../Componets/PhyComp5';
 const PhyPage= () => {
+  const [activeTab,setactiveTab]=useState("results");
   return (
     <div >
         <div className='fixed top-0 left-0 right-0 z-50 bg-white '>
@@ -70,27 +71,43 @@ const PhyPage= () => {
     p-0.1
     rounded-lg
   '>
-    <div className='
+    <div 
+    onClick={()=>{
+      setactiveTab("results")
+    }}
+    className={`
+      cursor-pointer
       flex w-[100%]                  // responsive
       sm:w-[50%]                     // responsive
       gap-2 items-center justify-center
-      bg-[#FFFFFF]
-      border rounded-lg
-    '>
+      ${activeTab === "results"
+     ?  "bg-[#FFFFFF] border  text-[#020817]" 
+     :  " text-[#64748B]"
+      }
+     rounded-lg `}>
       <FaRegChartBar size={16} />
-      <p className='font-semibold text-[14px] text-[#020817]'>
+      <p className='font-semibold text-[14px] '>
         Results & Analysis
       </p>
     </div>
 
-    <div className='
+    <div 
+    onClick={()=>{
+      setactiveTab("review")
+    }}
+    className={`
+    cursor-pointer
       flex w-[100%]                  // responsive
       sm:w-[50%]                     // responsive
       gap-2 items-center justify-center
-      rounded-lg
-    '>
+      ${
+        activeTab === "review" 
+        ? "bg-white text-[#020817] border"
+        : "text-[#64748B]"
+      }
+      rounded-lg `}>
       <LuNotepadText size={16} />
-      <p className='font-semibold text-[14px] text-[#64748B]'>
+      <p className='font-semibold text-[14px]'>
         Review Solutions
       </p>
     </div>
@@ -98,8 +115,9 @@ const PhyPage= () => {
 </div>
 
   
-
-    <div className='flex flex-wrap w-full lg:justify-evenly p-5 mt-8 gap-5'>
+ {activeTab == "results" && (
+<>
+<div className='flex flex-wrap w-full lg:justify-evenly p-5 mt-8 gap-5'>
            <Phycomp
   value="4"
   subtitle="Out Of 5"
@@ -130,7 +148,7 @@ const PhyPage= () => {
              
     </div>
 
-    <div className='flex flex-col lg:flex-row gap-7 p-4'>
+    <div className='flex flex-col lg:flex-row justify-center gap-7 p-4'>
                     <div>
                         <PhyComp3 />
                     </div>
@@ -139,6 +157,15 @@ const PhyPage= () => {
                    <PhyComp5/>
                 </div>
     </div>
+</>
+  
+ )}
+     {activeTab == "review" && (
+      <>
+     
+      </>
+     )}
+
     <div className='mt-9'>
      <Footer/>
     </div>
