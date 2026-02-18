@@ -39,9 +39,9 @@ const Header = () => {
                                 </li>
                     </ul>
                 </li>
-                <li className='hover:text-[#2563EB]'><Link to="/">My Learning</Link></li>
+                <li className='hover:text-[#2563EB]'><Link to="">My Learning</Link></li>
                 <li className='hover:text-[#2563EB]'><Link to="/TestPractice">Test Practice</Link></li>
-                <li className='hover:text-[#2563EB]'><Link to="/">About Us</Link></li>
+                <li className='hover:text-[#2563EB]'><Link to="">About Us</Link></li>
                
             </ul>
             <div className='hidden md:flex gap-9 lg:ml-[120px]'>

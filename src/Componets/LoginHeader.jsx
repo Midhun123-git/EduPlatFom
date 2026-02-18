@@ -40,9 +40,9 @@ const LoginHeader = () => {
                                 </li>
                     </ul>
                 </li>
-                <li className='hover:text-[#2563EB]'><Link to="/">My Learning</Link></li>
-                <li className='hover:text-[#2563EB]'><Link to="/">Test Practice</Link></li>
-                <li className='hover:text-[#2563EB]'><Link to="/">About Us</Link></li>
+                <li className='hover:text-[#2563EB]'><Link to="">My Learning</Link></li>
+                <li className='hover:text-[#2563EB]'><Link to="">Test Practice</Link></li>
+                <li className='hover:text-[#2563EB]'><Link to="">About Us</Link></li>
                 
             </ul>
                  
